@@ -4,5 +4,5 @@ Hello folks, these are my writeups for variant CTF platforms , hope u enjoy them
 ## **Writeups for**
 * Tryhackme
 * CyberTalents
-* Hacktehbox
+* HackTheBox
 * Root-me
