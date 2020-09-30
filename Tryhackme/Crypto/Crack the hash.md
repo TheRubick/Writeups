@@ -1,18 +1,20 @@
-# Th3Rub1ck Writeups for Tryhackme
-Hello folks, i have classified these writeups according to **Tryhackme** Rooms Segments
+# Crack the hash Writeup
+![Crack the hash image](./CrackTheHash.jpeg)
 
-![Tryhackme Rooms' Segments](./thmClassification.png)
+This room is a good one for those who want to learn hash cracking, i was one of them  :relieved:.
 
-**Segments list**
-* Web
-* Windows
-* Forensics
-* Reversing
-* Networking
-* Crypto
-* Linux
-* Misc
+So let's go.  :punch:
 
-**Note**
-According to Tryhackme policy, we **can't** reveal answer to any question whatever it is password,cracked hash or flag. However,we would focus on the hints and how to get the answer step by step and **small** part of the answer e.g. the first two letters of the password,etc..;in case you are still stuck.
-![Tryhackme Policies](./tryhackmePolicy.png)
+:warning: **But** before getting involve we should know how to identify hashes, in this issue we have many options.
+
+### hash identifiers
+* **CLI**
+
+  - **hash-identifier**
+  - **hashid**
+
+* **Online**
+
+  * [**hashes**](https://hashes.com/en/tools/hash_identifier)
+  * [**onlinehashcrack**](https://www.onlinehashcrack.com/hash-identification.php)
+  * [**md5hashing**](https://md5hashing.net/hash_type_checker)
