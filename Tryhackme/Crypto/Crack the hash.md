@@ -124,5 +124,6 @@ in our case we need to add the salt in this format : e5d8870e5bdd26602cab8dbe07a
 All what we will do now is hitting ```hashcat -a 0 -m 150 file.txt /usr/share/wordlists/rockyou.txt``` in the terminal, then we would got the hash cracked
 
 I hope you enjoyed my writeup as i enjoyed writing it :smile:
+
 If there is any issues,mis-understandings plz write them in the comments by making pull requests.
 
