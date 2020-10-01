@@ -96,10 +96,8 @@ Analyzing '$2y$12$Dwt1BZj6pcyc3Dy1FWZ5ieeUznr71EeNkJkUlypTsgbX1H68wsRom'
   * the last parameter is the wordlist file that we will use in cracking, and in our case it will be **rockyou.txt** which is mentioned in the room.
   * for another parameters you can hit ```hashcat -h``` in the terminal
 * So in this question we will hit ```hashcat -a 0 -m 3200 file.txt /usr/share/wordlists/rockyou.txt```
-* After waiting for some time :sleeping:, we cracked the hash :muscle: 
-```
-
-```
+* After waiting for **nearly 3 hours**  :sleeping:, we cracked the hash :muscle: 
+!["L1Q4.png"](./L1Q4.png)
 ### Question 5
 The Same method as we did in Question 1.
 
@@ -113,12 +111,18 @@ In this question we would deduce that all the tools have identified MD2,MD5 as p
 All what we will do now is hitting ```hashcat -a 0 -m 1000 file.txt /usr/share/wordlists/rockyou.txt``` in the terminal, then we would got the hash cracked.
 ### Question 3
 This one took me alot of time not because i didn't recognize the hash type but the number of round **#rounds = 5** was deceiving :angry:. Thanks to **NinjaJc01|James** who advised me to ignore the number of rounds :clap:.
+
 Anyway back to our problem, as we notice the **$6$** which indicates the type of the hash : **sha512crypt**
-All what we will do now is hitting ```hashcat -a 0 -m 1800 file.txt /usr/share/wordlists/rockyou.txt``` in the terminal, then we after some time :sleep: we would got the hash cracked.
+All what we will do now is hitting ```hashcat -a 0 -m 1800 file.txt /usr/share/wordlists/rockyou.txt``` in the terminal, then we would got the hash cracked after half an hour *most probably as it may take more/less depending on your machine*.
 ### Question 4
 This one also took me time because of the hash type in this time  :sweat:.
 After trying to crack the hash using the types mentioned as the *possible hashes* from all the above tools, none of them worked :disappointed_relieved:.
 Then we looked at the least possible hashes starting from **hash-identifier**, i got that hash type :muscle: and it was **HMAC-SHA1**
+
 **Note**
 in our case we need to add the salt in this format : e5d8870e5bdd26602cab8dbe07a942c8669e56d6:tryhackme in the text file.
-All what we will do now is hitting ```hashcat -a 0 -m 1sdfsdfsdfsdfsdfdsf file.txt /usr/share/wordlists/rockyou.txt``` in the terminal, then we would got the hash cracked
+All what we will do now is hitting ```hashcat -a 0 -m 150 file.txt /usr/share/wordlists/rockyou.txt``` in the terminal, then we would got the hash cracked
+
+I hope you enjoyed my writeup as i enjoyed writing it :smile:
+If there is any issues,mis-understandings plz write them in the comments by making pull requests.
+
